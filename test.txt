@@ -1,0 +1,1 @@
+Endee is a high-performance vector database designed for AI applications.

@@ -1,0 +1,9 @@
+fastapi
+uvicorn
+endee
+sentence-transformers
+python-multipart
+pypdf
+python-dotenv
+requests
+google-generativeai
