@@ -1,0 +1,2 @@
+# Root requirements file - points Render to the backend dependencies
+-r backend/requirements.txt
