@@ -1,14 +1,13 @@
 services:
-  # 1. The Endee Vector Database
+  # 1. Endee Vector Database (Docker image)
   - type: web
     name: endee-db
     image: endeeio/endee-server:latest
     env: docker
     plan: free
     healthCheckPath: /health
-    # No persistence on free tier, data is lost on restart
 
-  # 2. The Python Backend
+  # 2. Python Backend (FastAPI)
   - type: web
     name: rag-backend
     runtime: python
@@ -22,4 +21,4 @@ services:
           name: endee-db
           property: url
       - key: GEMINI_API_KEY
-        sync: false # You will need to enter this in Render dashboard
+        sync: false  # Enter this manually in Render dashboard
